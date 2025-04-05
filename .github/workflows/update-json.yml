@@ -10,12 +10,19 @@ on:
 
 jobs:
   update-json:
-    if: contains(github.event.head_commit.message, 'update-json') || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
 
     steps:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes
+        run: git pull origin main  
 
       - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v4
