@@ -1,45 +1,41 @@
 name: Update updates.json
 
 on:
-  workflow_dispatch:
   push:
-    paths:
-      - '**/*.apk'
     branches:
       - main
+    paths:
+      - '**/*.apk'
+  workflow_dispatch:
 
 jobs:
   update-json:
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.head_commit.message, 'update-json')
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     steps:
-      - name: 📥 Checkout Repository
+      - name: 📥 Checkout Repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetch all history for all branches and tags
+          fetch-depth: 0  # Fetches all history to allow proper merging
 
       - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: 3.11
 
-      - name: 🧠 Run Script to Update updates.json
+      - name: 🧠 Run update_json.py
         run: |
           python .github/scripts/update_json.py
 
-      - name: 💾 Commit and Push updates.json with rebase
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 💾 Commit and Push updates.json
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
+          git checkout main
+          git pull --rebase origin main  # Pull latest changes and rebase
           git add updates.json
-          git commit -m "CI: auto-update updates.json" || exit 0
-
-          # Pull latest changes and rebase
-          git pull --rebase origin main
-
-          # Push changes
+          git commit -m "CI: auto-update updates.json" || echo "No changes to commit"
           git push origin main
