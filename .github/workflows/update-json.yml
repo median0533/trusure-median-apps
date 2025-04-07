@@ -35,7 +35,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout main
-          git pull --rebase origin main  # Pull latest changes and rebase
+          git stash -u  # Stash all changes including untracked files
+          git pull --rebase origin main
+          git stash pop  # Restore changes
           git add updates.json
           git commit -m "CI: auto-update updates.json" || echo "No changes to commit"
           git push origin main
