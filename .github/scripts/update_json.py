@@ -2,7 +2,7 @@ import os
 import json
 
 apps = {
-    "main-app": "Trusure Median",
+    "main-app": "Trusure App",
     "anydesk": "Anydesk Tool",
     "plugin": "Utility Plugin"
 }
