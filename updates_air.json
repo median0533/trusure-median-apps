@@ -2,12 +2,11 @@
 {
   "main-app": {
     "name": "Air App",
-    "latest_version": "v1.0",
-    "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-app/v1.0/app-arm64-v8a-release.apk",
+    "latest_version": "v1.0.10",
+    "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-air/v10.0/app-arm64-v8a-release.apk",
     "whats_new": [
-      "Enhanced functionality for more accurate readings.",
-      "Improved app speed and performance.",
-      "Bug fixes and stability improvements."
+      "Major Bug Fix",
+      "updated Security"
     ],
     "important_info": [
       "Android Only: This app works exclusively for Android devices.",
@@ -15,23 +14,11 @@
     ],
     "previous_version": [
       {
-        "version": "v2.4.3",
+        "version": "v1.0.1",
         "description": "No description available.",
         "whats_new": [],
-        "apk_url": "https://example.com/downloads/trusure-v2.4.3.apk"
+        "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-air/v10.0/app-arm64-v8a-release.apk"
       },
-      {
-        "version": "v2.3.8",
-        "description": "No description available.",
-        "whats_new": [],
-        "apk_url": "https://example.com/downloads/trusure-v2.3.8.apk"
-      },
-      {
-        "version": "v2.2.1",
-        "description": "No description available.",
-        "whats_new": [],
-        "apk_url": "https://example.com/downloads/trusure-v2.2.1.apk"
-      }
     ]
   },
   "anydesk": {
