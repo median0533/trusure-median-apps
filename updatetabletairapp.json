@@ -1,0 +1,35 @@
+{
+  "main-app": {
+    "name": "Trusure App",
+    "latest_version": "v1.0",
+    "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-tablet-app/v1.0/app-arm64-v8a-release.apk",
+    "whats_new": [
+      "Add new Features",
+      "updated Security"
+    ],
+    "important_info": [
+      "Android Only: This app works exclusively for Android devices.",
+      "Beware of Counterfeits: Always download Trusure App from official sources."
+    ],
+    "previous_version": [
+      {
+        "version": "v1.0",
+        "description": "No description available.",
+        "whats_new": [],
+        "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-tablet-app/v1.0/app-arm64-v8a-release.apk"
+      }
+    ]
+  },
+  "anydesk": {
+    "name": "Download Anydesk Tool",
+    "latest_version": "v1.0",
+    "changelog": "Auto-added v1.0",
+    "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/anydesk/v1.0/anydesk-7-3-0.apk"
+  },
+  "plugin": {
+    "name": "Download Utility Plugin",
+    "latest_version": "v1.0",
+    "changelog": "Auto-added v1.0",
+    "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/plugin/v1.0/anydesk-plugin-ad1-1-4-4.apk"
+  }
+}
