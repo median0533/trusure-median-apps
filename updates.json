@@ -2,17 +2,22 @@
 {
   "main-app": {
     "name": "Trusure App",
-    "latest_version": "v1.0.11",
-    "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-app/v11.0/app-arm64-v8a-release.apk",
+    "latest_version": "v1.0.12",
+    "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-app/v12.0/app-arm64-v8a-release.apk",
     "whats_new": [
-      "Major Bug Fix",
-      "updated Security"
+      "Introduced user-selectable app languages with performance and usability improvements."
     ],
     "important_info": [
       "Android Only: This app works exclusively for Android devices.",
       "Beware of Counterfeits: Always download Trusure App from official sources."
     ],
     "previous_version": [
+      {
+        "version": "v1.0.11",
+        "description": "updated Security",
+        "whats_new": [],
+        "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-app/v10.0/app-arm64-v8a-release.apk"
+      },
       {
         "version": "v1.0.10",
         "description": "No description available.",
