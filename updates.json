@@ -2,16 +2,22 @@
 {
   "main-app": {
     "name": "Trusure App",
-    "latest_version": "v1.0.12",
-    "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-app/v12.0/app-arm64-v8a-release.apk",
+    "latest_version": "v1.0.13",
+    "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-app/v13.0/app-arm64-v8a-release.apk",
     "whats_new": [
-      "Introduced user-selectable app languages with performance and usability improvements."
+      "Improved AI marking reliability with clearer network/server feedback and smoother scan progress updates. Added Offline AI marking, allowing local device-based marking when server AI is unavailable or internet is unstable."
     ],
     "important_info": [
       "Android Only: This app works exclusively for Android devices.",
       "Beware of Counterfeits: Always download Trusure App from official sources."
     ],
     "previous_version": [
+      {
+        "version": "v1.0.12",
+        "description": "Introduced user-selectable app languages with performance and usability improvements",
+        "whats_new": [],
+        "apk_url": "https://raw.githubusercontent.com/median0533/trusure-median-apps/main/main-app/v12.0/app-arm64-v8a-release.apk"
+      },
       {
         "version": "v1.0.11",
         "description": "updated Security",
